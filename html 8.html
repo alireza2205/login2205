@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        LoginPage
+    </title>
+    <style>
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background: linear-gradient(120deg,yellow,red);
+        }
+    </style>
+</head>
+<body>
+    <style>
+        .content {
+            background-color: snow;
+            border: 30px solid snow;
+            margin-left: 38%;
+            margin-top: 10%;
+            width: 20%;
+            position: absolute;
+            border-radius: 20px;
+
+        }
+        .login {
+            font-size: xxx-large;
+            text-align: center;
+            color: black;
+            margin-top: 8%;
+            margin-bottom: 15%;
+        }
+        .inputbox {
+            position: relative;
+            border-bottom: 3px solid silver;
+            margin: 35px;
+            margin-bottom: 45px;
+        }
+        .inputbox input {
+            width: 100%;
+            height: 100%;
+            border: none;
+            background: none;
+            outline: none;
+        }
+        .inputbox label {
+            position: absolute;
+            top: 4px;
+            color: silver;
+            transform: translateY(-30%);
+            pointer-events: none;
+            transition: .7s;
+        }
+        .inputbox input:focus ~ label,
+        .inputbox input:valid ~ label {
+            top: -11px;
+            color: coral;
+        }
+        .links {
+            padding-left: 9%;
+            font-size: large;
+            color: black;
+            text-decoration: none;
+        }
+        .links:hover {
+            color: coral;
+        }
+        .botton {
+            place-items: center;
+            display: grid;
+            margin-bottom: 12%;
+            margin-top: 12%;
+            
+        }
+        input[type="submit"] {
+            width: 80%;
+            height: 50px;
+            font-size: large;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            border: 3px solid black;
+            background:linear-gradient(120deg,yellow,red);
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    </style>
+    <section>
+        <div class="content">
+            <h1 class="login">login</h1>
+            <div>
+                <div>
+                    <div class="inputbox">
+                        <input type="text" required>
+                        <label>Username</label> 
+                    </div>
+                    <div class="inputbox">
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                </div>
+                <div>
+                    <a href="s" class="links">Forgot password</a>
+                    <a href="s" class="links" style="padding-left: 50px;">Sing up</a>
+                </div>
+                <div class="botton">
+                    <input  type="submit" value="login">
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
